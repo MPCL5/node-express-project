@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+    {{!-- link css to html --}}
+    <link rel="stylesheet" href="css/search.css">
+    <title>Report</title>
+</head>
+<body>
+    <div class="main">
+        <div id="top">
+            <h1>Search</h1>
+        </div>
+        <div class="input">
+        <form action="/search" method="POST" id="form">
+            <select name="sort" class="form input">
+                <option value="firstName">First Name</option>
+                <option value="lastName">Last Name</option>
+                <option value="age">Age</option>
+                <option value="id">Student Number</option>
+                <option value="state">State</option>
+            </select>
+            <input type="text" class="form input" name="search" placeholder="Type something ...">
+            {{!-- <input type="submit" class="form input fa fa-search" value="<i class='fa fa-folder'></i>"> --}}
+            <button class="form input"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+        <div id="register">
+            registred members since now: {{@registered}}
+        </div>
+    </div>
+</body>
+</html>

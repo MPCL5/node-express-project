@@ -1,0 +1,103 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password], input[type=tel], input[type=number], input[type=email], select, option, textarea {
+  width: 50%;
+  padding: 15px;
+  margin: 4px 1px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-bottom-color: darkgrey;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+input[type=number] {
+  width: unset;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=email]:focus{
+  background-color: #ddd;
+  outline: none;
+  border: unset;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: black;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  resize: none;
+  margin-left: 40px;
+}
+
+.main {
+  background-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 1px;
+  width: 60%;
+  margin: auto;
+}
+
+.inputs {
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.btn {
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: oblique;
+  letter-spacing: 2px;
+  width: 25%;
+  background: #5c91fe;
+  padding: 10px 40px;
+  border-radius: 1px;
+  box-shadow: none;
+  margin-top: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+#top {
+  text-align: center;
+  padding-bottom: 10px;
+  font-variant: small-caps;
+}
+
+#gender {
+  text-align: center;
+  margin: 2px 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}

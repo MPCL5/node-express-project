@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Js Project</title>
+      	<!-- Google font -->
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+
+      {{!-- link css file to html --}}
+      <link href="css/secound.css" rel="stylesheet">
+  </head>
+
+  <body style="background: url('images/background.jpg');  background-repeat: no-repeat;  background-size: cover;  background-attachment: fixed;  background-position: center;">
+    <div class="main">
+      <div id="top">
+        <br> Fill out the empty fields.
+      </div>
+
+      <form action="/Final" method="POST">
+      <input type="hidden" name="id" value="{{@id}}">
+        <div class="inputs">
+          <p style="text-align: center">
+          <img src="images/logo.jpg" style="margin: 5px;"> <br>
+          First Name: <input type="text" name="firstName" placeholder="First" id="firstName" required> <br> 
+          Last Name: <input type="text" name="lastName" placeholder="Last"required> <br>
+          </p>
+          <p id="gender"> Gender: <br>
+          <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female <input type="radio" name="gender" value="other">Other <br> </p>
+          <p style="text-align: center">
+          Age: <input type="number" name="age" min="25" max="100" placeholder="25" required> <br>
+          Phone: <input type="tel" name="phone" placeholder="+989123456789" required> <br>
+          Email: <input type="email" name="email" placeholder="Example@email.com" required> <br>
+          State: 
+          <select name="State" id="state">
+            <option value="EastAzarbayjan">East Azarbayjan</option>
+            <option value="WestAzarbayjan">West Azarbayjan</option>
+          </select> <br> <br>
+          Address: <br>
+          <textarea name="address" cols="30" rows="10"></textarea>
+          </p>
+        </div>
+
+        <div class="clearfix">
+          <p style="text-align: center "><button type="submit" class="btn">Save</button> </p>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

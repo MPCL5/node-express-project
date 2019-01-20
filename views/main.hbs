@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Js Project</title>
+      	<!-- Google font -->
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+
+      {{!-- link css to html --}}
+      <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body style=" background: url('images/background1.jpg');  background-repeat: no-repeat;  background-size: cover;  background-attachment: fixed;  background-position: center;">
+    
+    <div class="main">
+      <div id="top">
+        <br> Check your informations.
+      </div>
+
+      <form action="/check" method="POST">
+
+        <div class="inputs">   
+          <img src="images/logo.jpg" style="margin-top: 10px">   
+          <p style="text-align: center">
+            <input type="text" placeholder="Enter First name" name="firstName" required> <br>
+            <input type="text" placeholder="Enter Last name" name="lastName" required> <br>
+            <input type="text" placeholder="Enter your id code" name="id" required maxlength="10"> <br>
+          </p>
+        </div>
+
+        <div class="clearfix">
+          <p style="text-align: center"> <button type="submit" class="btn">Check</button> </p>
+        </div>
+
+      </form>
+    </div>
+    
+  </body>
+</html>

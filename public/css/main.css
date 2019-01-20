@@ -1,0 +1,87 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 15px;
+  margin: 4px 1px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: black;
+  width: 30%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+#top {
+  text-align: center;
+  font-variant: small-caps;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: oblique;
+  letter-spacing: 2px;
+  width: 25%;
+  background-color: royalblue;
+  padding: 10px 40px;
+  border-radius: 2px;
+  box-shadow: none;
+  margin-top: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.main {
+  background-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 1px;
+  width: 50%;
+  margin: auto;
+}
+
+.inputs {
+  text-align: center;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+
+.clearfix::after {
+  text-align: center;
+  margin: auto;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
